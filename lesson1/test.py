@@ -62,3 +62,8 @@ print(type(a))
 
 age = int(input('How old are you?: '))  # input('How old are you?: ') -> int('19') -> 19
 print(age >= 18)
+
+# int, float, bool, str
+
+pi_str = str(3.14)
+print(pi_str)
