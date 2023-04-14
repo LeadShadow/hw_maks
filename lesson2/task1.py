@@ -6,8 +6,6 @@
 from datetime import datetime
 
 
-date = datetime(year=2003, month=12, day=16)
-print(date.weekday())
 num = int(input("Enter the number of points: "))
 
 if num >= 83:

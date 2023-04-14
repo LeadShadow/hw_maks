@@ -11,12 +11,13 @@
 
 num = int(input("Enter a number: "))
 
-if
-    if
+print(7 % 2)
+if num > 0:
+    if num % 2 == 1:
         result = "Positive odd number"
     else:
         result = "Positive even number"
-elif
+elif num < 0:
     result = "Negative number"
 else:
     result = "It is zero"
