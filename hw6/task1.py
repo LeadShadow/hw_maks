@@ -5,4 +5,11 @@
 # именем 'first_name middle_name last_name', если же middle_name отсутствует, то возвращаемая строка
 # должна быть 'first_name last_name'.
 
-def get_fullname
+def get_fullname(first_name, last_name, middle_name=None):
+    if first_name and last_name and middle_name:
+        return f'{last_name} {first_name} {middle_name}'
+    else:
+        return f'{first_name} {last_name}'
+
+
+print(get_fullname('Sasha', 'Samus'))
