@@ -10,8 +10,18 @@
 # количество ключевых аргументов, и также должна вернуть сумму сложения size c количеством
 # переданных в функцию ключевых аргументов.
 # Тестовые вызовы функций, для правильности работы, будут следующими:
-#
-# first(5, "first", "second", "third")
-# first(1, "Alex", "Boris")
-# second(3, comment_one="first", comment_two="second", comment_third="third")
-# second(10, comment_one="Alex", comment_two="Boris")
+
+
+
+def first(size, *args):
+    return size + len(args)
+
+
+def second(size, **kwargs):
+    return size + len(kwargs)
+
+
+print(first(5, "first", "second", "third"))
+print(first(1, "Alex", "Boris"))
+print(second(3, comment_one="first", comment_two="second", comment_third="third"))
+print(second(10, comment_one="Alex", comment_two="Boris"))
