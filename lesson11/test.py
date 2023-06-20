@@ -55,3 +55,8 @@ print(s.endswith('jpg'))
 mylist1 = [1, 2, 3, 4, 5]
 for i in mylist1:
     print(i)
+
+
+list_pin = ['1010', '1010', '1111']
+print(len(list_pin))
+print(len(set(list_pin)))

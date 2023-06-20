@@ -12,3 +12,18 @@
 # Если список удовлетворяет всем поставленным условиям, функция возвращает логическое значение True.
 # Если хоть одно из условий нарушено, возвращаемое значение — False. Предусмотреть проверку на
 # пустой список в аргументе функции и вернуть False.
+
+def is_valid_pin_codes(pin_codes: list) -> bool:
+    if len(pin_codes) > len(set(pin_codes)):
+        return False
+    for code in pin_codes:  # '1010'
+        if type(code) != str:
+            return False
+        if len(code) != 4:
+            return False
+        if not code.isdigit():  # '101d'
+            return False
+    return True
+
+
+print(is_valid_pin_codes(['1101', '9034', '0011']))
