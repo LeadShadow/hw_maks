@@ -7,3 +7,4 @@
 # 'Al\nKdfe23\t\v.\r'
 
 def real_len(text):
+
